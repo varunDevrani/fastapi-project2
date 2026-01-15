@@ -21,3 +21,10 @@ class User(BaseModel):
     role: List[Role]
 
 
+class Update_User(BaseModel):
+    first_name: Union[None, str] = None
+    last_name: Union[None, str] = None
+    middle_name: Union[None, str] = None
+    role: Union[None, List[Role]] = None
+
+
